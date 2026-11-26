@@ -43,4 +43,4 @@ jobs:
         env:
           FLASK_ENV: testing
           SECRET_KEY: ci-test-secret
-          DATABASE_URL: sqlite:///:memory:
+          DATABASE_URL: 'sqlite:///:memory:'
