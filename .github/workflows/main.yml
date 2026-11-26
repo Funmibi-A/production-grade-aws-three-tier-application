@@ -44,3 +44,7 @@ jobs:
           FLASK_ENV: testing
           SECRET_KEY: ci-test-secret
           DATABASE_URL: 'sqlite:///:memory:'
+
+      - name: Build Docker image
+        run: |
+          docker build -t tickette-review:${{ github.sha }} .
