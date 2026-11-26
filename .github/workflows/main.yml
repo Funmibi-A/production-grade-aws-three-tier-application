@@ -55,6 +55,6 @@ jobs:
           image-ref: 'tickette-review:${{ github.sha }}'
           format: 'table'
           exit-code: '0'
-          ignore-unfixed: true
+          ignore-unfixed: false
           vuln-type: 'os,library'
-          severity: 'CRITICAL,HIGH'
+          severity: 'UNKNOWN,LOW,MEDIUM,CRITICAL,HIGH'
